@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "day_1"
-path = "src/day_1/main.rs"
+name = "day_one"
+path = "src/day_one/main.rs"
 
 [dependencies]
