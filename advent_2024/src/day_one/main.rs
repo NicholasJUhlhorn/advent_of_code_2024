@@ -4,6 +4,7 @@
 
 // use std::env;
 use std::fs;
+use std::collections::HashMap;
 
 fn main() {
     let contents = fs::read_to_string("input/day_one.txt")
@@ -31,5 +32,19 @@ fn main() {
         sum = sum + difference;
     }
 
-    println!("The difference sum is: {sum}")
+    println!("The difference sum is: {sum}");
+
+    let mut count_dictionary = HashMap::new();
+
+    for value in list_2 {
+        count_dictionary.entry(value).and_modify(|count| *count += 1).or_insert(1);
+    }
+    
+    let mut similarity_score = 0;
+    for value in list_1 {
+        let product = value * count_dictionary.get(&value).unwrap_or(&0);
+        similarity_score += product;
+    }
+
+    println!("The similarity score is: {similarity_score}");
 }
