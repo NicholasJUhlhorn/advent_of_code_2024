@@ -1,5 +1,5 @@
 # advent_of_code_2024
-Reupping my rust skills again over December.\\
+Re-upping my rust skills again over December.\\
 
 Following is my thought process for each day:
 # Day One
@@ -17,3 +17,5 @@ My plan is to create a count dictionary of list 2 and then use that to loop thro
 ## Task One
 Simple check and go algorithm for this one.\\
 Can early quit on input that has one invalidation of switching from increasing to decreasing, or has a difference outside the 1 - 3 bounds.
+## Task Two
+I believe that I can have one mistake greedily. Just allow one mistake and then no more. The only caveat is that I need to have a second flag for ignoring if the sequence is increasing or not at the beginning.
