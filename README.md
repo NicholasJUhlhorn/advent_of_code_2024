@@ -19,3 +19,7 @@ Simple check and go algorithm for this one.\\
 Can early quit on input that has one invalidation of switching from increasing to decreasing, or has a difference outside the 1 - 3 bounds.
 ## Task Two
 I believe that I can have one mistake greedily. Just allow one mistake and then no more. The only caveat is that I need to have a second flag for ignoring if the sequence is increasing or not at the beginning.
+
+# Day Three
+## Task One
+Seems to be a simple string parsing problem, find the 'mul(' opens, and the ')' closures, then parse integers from ',' deliminators. The hard part is re-familiarize myself with Rust's string parsing conventions. 
